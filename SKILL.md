@@ -153,6 +153,9 @@ Read the relevant reference doc BEFORE generating code:
 | Quick Actions & Screen Flows | `reference/quick-actions/quick-actions-and-screen-flows.md` |
 | Solution Architecture Patterns | `reference/solution-architecture/solution-architecture-patterns.md` |
 | Purchase Order PDF Workflow (end-to-end) | `reference/solution-architecture/purchase-order-pdf-workflow.md` |
+| Flow + Apex Coexistence (order of execution, error handling) | `reference/flows-and-automation/flow-apex-coexistence.md` |
+| Visualforce Controllers & Security (types, sharing, components, Lightning) | `reference/visualforce-pdf/visualforce-controllers-and-security.md` |
+| Visualforce + PDF Deployment (dependency ordering, testing, profiles) | `reference/deployment/visualforce-deployment.md` |
 | Apex Deployment & CI/CD | `reference/deployment/apex-deployment.md` |
 
 ## Checklists
