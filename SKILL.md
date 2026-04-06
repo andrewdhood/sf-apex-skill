@@ -134,7 +134,7 @@ When generating Apex for this developer:
 - **Comments**: `// ` with one space, disembodied narrator tone
 - **Every method**: document params and return value
 - **Debug statements**: at key decision points
-- **No single-line conditionals** except ternary `?`
+- **No single-line conditionals** except ternary `?`. Always use `if {` with the body on a new line and the closing `}` on its own line. Never `if (x) doThing();`
 - **Sharing**: `with sharing` by default, document why if `without sharing`
 - **Bulkification**: all triggers and invocable methods handle collections
 - **Variable names**: meaningful in context, not `temp` or `data`
@@ -165,6 +165,31 @@ Read the relevant reference doc BEFORE generating code:
 | Flow Security, Testing & Null Handling (run context, Flow.Interview, null vs blank) | `reference/flows-and-automation/flow-security-and-testing.md` |
 | Visualforce + PDF Deployment (dependency ordering, testing, profiles) | `reference/deployment/visualforce-deployment.md` |
 | Apex Deployment & CI/CD | `reference/deployment/apex-deployment.md` |
+
+## Clean Code Book Reference
+
+Distilled chapter notes from *Clean Code* by Robert C. Martin (Prentice Hall, 2008).
+**⚠ Important:** Salesforce platform requirements ALWAYS override Clean Code principles
+when they conflict. DML must come before callouts. No SOQL/DML in loops. Bulkification
+beats "small functions that do one thing." Every chapter doc has a Salesforce/Apex
+Caveats section listing these conflicts.
+
+| Chapter | File |
+|---|---|
+| Ch 1: Clean Code | `reference/clean-code-book/ch01-clean-code.md` |
+| Ch 2: Meaningful Names | `reference/clean-code-book/ch02-meaningful-names.md` |
+| Ch 3: Functions | `reference/clean-code-book/ch03-functions.md` |
+| Ch 4: Comments | `reference/clean-code-book/ch04-comments.md` |
+| Ch 5: Formatting | `reference/clean-code-book/ch05-formatting.md` |
+| Ch 6: Objects and Data Structures | `reference/clean-code-book/ch06-objects-and-data-structures.md` |
+| Ch 7: Error Handling | `reference/clean-code-book/ch07-error-handling.md` |
+| Ch 8: Boundaries | `reference/clean-code-book/ch08-boundaries.md` |
+| Ch 9: Unit Tests | `reference/clean-code-book/ch09-unit-tests.md` |
+| Ch 10: Classes | `reference/clean-code-book/ch10-classes.md` |
+| Ch 11: Systems | `reference/clean-code-book/ch11-systems.md` |
+| Ch 12: Emergence | `reference/clean-code-book/ch12-emergence.md` |
+| Ch 13: Concurrency (adapted to Apex async model) | `reference/clean-code-book/ch13-concurrency.md` |
+| Ch 17: Smells and Heuristics | `reference/clean-code-book/ch17-smells-and-heuristics.md` |
 
 ## DevOps Book Reference
 

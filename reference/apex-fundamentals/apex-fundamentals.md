@@ -14,6 +14,20 @@
 - When you need partial-success DML, always use `Database.insert(records, false)` and iterate `Database.SaveResult[]` to handle failures, because the plain `insert records` statement is all-or-nothing and rolls back the entire transaction on any single failure.
 - Always use `Test.startTest()` / `Test.stopTest()` in test methods to reset governor limits for the code under test, because without them your test setup counts against the same limits as your code.
 - Never write a test that only asserts "no exception was thrown" because that proves nothing about correctness. Always assert specific field values, record counts, or error messages.
+- Never use single-line `if` statements. Always use braces on their own lines with the body indented on a separate line. Ternary `?` is the only acceptable single-line conditional.
+
+```apex
+// WRONG — never do this
+if (account.Name == null) account.Name = 'Unknown';
+
+// WRONG — braces on same line
+if (account.Name == null) { account.Name = 'Unknown'; }
+
+// RIGHT — braces on new lines, body on its own line
+if (account.Name == null) {
+    account.Name = 'Unknown';
+}
+```
 
 ## How It Works
 
