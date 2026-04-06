@@ -147,16 +147,42 @@ Read the relevant reference doc BEFORE generating code:
 | Topic | File |
 |---|---|
 | Apex Fundamentals (sharing, limits, triggers, testing, async) | `reference/apex-fundamentals/apex-fundamentals.md` |
+| Apex Design Patterns (trigger handler, service, selector, domain, UoW, factory, strategy, singleton, batch) | `reference/apex-fundamentals/apex-design-patterns.md` |
 | Invocable Methods (Flow-to-Apex bridge) | `reference/apex-fundamentals/invocable-methods.md` |
 | Visualforce PDF Generation | `reference/visualforce-pdf/visualforce-pdf-generation.md` |
+| Visualforce Controllers & Security (types, sharing, components, Lightning) | `reference/visualforce-pdf/visualforce-controllers-and-security.md` |
 | Email Services with Attachments | `reference/email-services/email-with-attachments.md` |
+| Apex Email Patterns (outbound, inbound, templates, logging, batch, testing) | `reference/email-services/apex-email-patterns.md` |
 | Quick Actions & Screen Flows | `reference/quick-actions/quick-actions-and-screen-flows.md` |
 | Solution Architecture Patterns | `reference/solution-architecture/solution-architecture-patterns.md` |
 | Purchase Order PDF Workflow (end-to-end) | `reference/solution-architecture/purchase-order-pdf-workflow.md` |
 | Flow + Apex Coexistence (order of execution, error handling) | `reference/flows-and-automation/flow-apex-coexistence.md` |
-| Visualforce Controllers & Security (types, sharing, components, Lightning) | `reference/visualforce-pdf/visualforce-controllers-and-security.md` |
+| Record-Triggered Flows (before/after/async, Flow vs Apex trigger decision) | `reference/flows-and-automation/record-triggered-flows.md` |
+| Flow Elements & Resources (Transform, all elements, formulas, Flow vs Apex table) | `reference/flows-and-automation/flow-elements-and-resources.md` |
+| Screen Flows (distribution, custom LWC, Apex integration, reactive screens) | `reference/flows-and-automation/screen-flows.md` |
+| Scheduled, Autolaunched & Platform Event Flows (async patterns, Apex alternatives) | `reference/flows-and-automation/scheduled-and-platform-event-flows.md` |
+| Flow Governor Limits (shared Flow+Apex limits, Transform, structural limits) | `reference/flows-and-automation/flow-governor-limits.md` |
+| Flow Security, Testing & Null Handling (run context, Flow.Interview, null vs blank) | `reference/flows-and-automation/flow-security-and-testing.md` |
 | Visualforce + PDF Deployment (dependency ordering, testing, profiles) | `reference/deployment/visualforce-deployment.md` |
 | Apex Deployment & CI/CD | `reference/deployment/apex-deployment.md` |
+
+## DevOps Book Reference
+
+Distilled chapter notes from *Mastering Salesforce DevOps* by Andrew Davis (Apress, 2019):
+
+| Chapter | File |
+|---|---|
+| Ch 1: Introduction | `reference/devops-book/ch01-introduction.md` |
+| Ch 2: Salesforce | `reference/devops-book/ch02-salesforce.md` |
+| Ch 3: DevOps | `reference/devops-book/ch03-devops.md` |
+| Ch 4: Developing on Salesforce | `reference/devops-book/ch04-developing-on-salesforce.md` |
+| Ch 5: Application Architecture | `reference/devops-book/ch05-application-architecture.md` |
+| Ch 6: Environment Management | `reference/devops-book/ch06-environment-management.md` |
+| Ch 7: The Delivery Pipeline | `reference/devops-book/ch07-delivery-pipeline.md` |
+| Ch 8: Quality and Testing | `reference/devops-book/ch08-quality-and-testing.md` |
+| Ch 9: Deploying | `reference/devops-book/ch09-deploying.md` |
+| Ch 10: Releasing to Users | `reference/devops-book/ch10-releasing-to-users.md` |
+| Ch 11-13: Ops & Conclusion | `reference/devops-book/ch11-13-ops-and-conclusion.md` |
 
 ## Checklists
 
